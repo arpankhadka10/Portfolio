@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(13, 56, 56); /* Dark background */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    background-color: rgb(20, 75, 75); /* Matching navbar color with the image background */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+nav .left {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 20px;
+}
+nav .right ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav .right ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav .right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav .right ul li a:hover {
+    text-decoration: underline;
+}
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+.leftSection {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+.rightSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightSection img {
+    width: 400px; /* Increased width */
+    height: 450px; /* Increased height */
+    border-radius: 35%; /* Circular shape */
+    background-color: rgb(20, 75, 75); /* Slightly different color than page background */
+    padding: 20px; /* Increased padding for better separation */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+.rightSection img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
