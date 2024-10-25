@@ -59,13 +59,23 @@
             font-size: 1.2rem;
             margin-bottom: 10px;
         }
-        .project-link {
-            font-size: 1.2rem;
-            color: #FFDD57;
-            text-decoration: none;
+        .button-link button {
+            padding: 10px 20px;
+            background-color: #FFDD57;
+            color: #333;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .project-link:hover {
-            text-decoration: underline;
+        .button-link button:hover {
+            background-color: #FFC107;
+        }
+        .button-link a {
+            color: inherit;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -96,7 +106,9 @@
             <p>
                 This Tic Tac Toe game is developed using HTML, CSS, and JavaScript, focusing on front-end technologies. It features an interactive user interface where two players can compete. The project demonstrates dynamic DOM manipulation and the use of JavaScript logic to check for winning conditions and handle gameplay.
             </p>
-            <a href="https://accorto10.github.io/Game-pj/" target="_blank" class="project-link">PROJECT PAGE</a>
+            <div class="button-link">
+                <button onclick="window.open('https://accorto10.github.io/Game-pj/', '_blank')">PROJECT PAGE</button>
+            </div>
         </div>
     </div>
 
