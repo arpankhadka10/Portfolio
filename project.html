@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Arpan Khadka</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(13, 56, 56);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: rgb(20, 75, 75);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .projects-container {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .project-item {
+            background-color: rgb(62, 114, 114);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .button-link button {
+            padding: 10px 20px;
+            background-color: #FFDD57;
+            color: #333;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button-link button:hover {
+            background-color: #FFC107;
+        }
+        .button-link a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="projects-container">
+        <h1>My Projects</h1>
+
+        <div class="project-item">
+            <h2>Hostel Management System</h2>
+            <p>
+                The Hostel Management System (HMS) is a project that implements fundamental CRUD operations. It allows users to Create, Read, Update, and Delete data stored in a locally-hosted database using PHP and MySQL. The system efficiently manages student data, room assignments, and other hostel-related tasks, showcasing the integration of backend development with a user-friendly interface.
+            </p>
+        </div>
+
+        <div class="project-item">
+            <h2>Tic Tac Toe - Game</h2>
+            <p>
+                This Tic Tac Toe game is developed using HTML, CSS, and JavaScript, focusing on front-end technologies. It features an interactive user interface where two players can compete. The project demonstrates dynamic DOM manipulation and the use of JavaScript logic to check for winning conditions and handle gameplay.
+            </p>
+            <div class="button-link">
+                <button onclick="window.open('https://accorto10.github.io/Game-pj/', '_blank')">PROJECT PAGE</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
