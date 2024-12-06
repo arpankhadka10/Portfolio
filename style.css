@@ -9,7 +9,7 @@ body {
 }
 nav {
     background-color: rgb(20, 75, 75); /* Matching navbar color with the image background */
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,19 +18,25 @@ nav {
 nav .left {
     font-size: 1.5rem;
     font-weight: bold;
-    padding-left: 20px;
 }
 nav .right ul {
     list-style-type: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 nav .right ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 nav .right ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+nav .right ul li a i {
+    margin-right: 8px;
     font-size: 1.2rem;
 }
 nav .right ul li a:hover {
