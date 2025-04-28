@@ -1,72 +1,126 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* Body */
 body {
-    background-color: rgb(13, 56, 56); /* Dark background */
-    color: white;
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
 }
+
+/* Navigation */
 nav {
-    background-color: rgb(20, 75, 75); /* Matching navbar color with the image background */
-    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+    gap: 30px;
+    z-index: 10;
 }
-nav .left {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-nav .right ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-nav .right ul li {
-    margin-left: 20px;
-}
-nav .right ul li a {
+
+nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Split Section */
+main {
     display: flex;
-    align-items: center;
+    height: 100vh;
 }
-nav .right ul li a i {
-    margin-right: 8px;
-    font-size: 1.2rem;
-}
-nav .right ul li a:hover {
-    text-decoration: underline;
-}
-.firstSection {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    align-items: center;
-}
+
+/* Left Side (Gray background) */
 .leftSection {
-    font-size: 1.5rem;
-    line-height: 1.6;
+    background-color: #e6e6e6;
+    flex: 1;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #111;
 }
+
+.leftSection h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.leftSection p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: black;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    background: #d4d4d4;
+    transform: scale(1.1);
+}
+
+/* Right Side (Black background) */
 .rightSection {
+    background-color: black;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
 .rightSection img {
-    width: 400px; /* Increased width */
-    height: 450px; /* Increased height */
-    border-radius: 35%; /* Circular shape */
-    background-color: rgb(20, 75, 75); /* Slightly different color than page background */
-    padding: 20px; /* Increased padding for better separation */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.4s ease;
 }
+
 .rightSection img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+    transform: scale(1.05);
+}
+
+/* "Contact Me" Button */
+.contact-button {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #e6e6e6;
 }
