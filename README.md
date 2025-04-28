@@ -48,12 +48,4 @@ Here are some of the exciting projects I've worked on:
 
 ---
 
-### 🎯 Fun Side Project
-Check out my **YouTube Shorts Channel** where I share:
-- 🧠 Life lessons from books and personalities.
-- 🌟 Facts about famous footballers and singers.
-- 🧒 Moral stories for kids.
-
----
-
 Thanks for stopping by! Let's create something amazing together. 🚀
