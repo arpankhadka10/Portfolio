@@ -4,49 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Arpan Khadka</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
+        /* Reset */
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        /* Body */
         body {
-            background-color: rgb(13, 56, 56);
-            color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #dcdcdc;
+            color: black;
+            min-height: 100vh;
         }
+
+        /* Navigation */
         nav {
-            background-color: rgb(20, 75, 75);
-            padding: 10px 0;
-            text-align: center;
+            position: relative;
+            background-color: black;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
         }
+
         nav ul {
+            display: flex;
+            gap: 40px;
             list-style-type: none;
-            padding: 0;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: color 0.3s;
         }
+
         nav ul li a:hover {
+            color: #dcdcdc;
             text-decoration: underline;
         }
+
+        /* About Section */
         .about-container {
-            text-align: center;
-            margin: 50px auto;
             max-width: 800px;
+            margin: 80px auto;
+            text-align: center;
+            padding: 0 20px;
         }
-        h1 {
-            font-size: 2.5rem;
+
+        .about-container h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
             margin-bottom: 20px;
         }
-        p {
+
+        .about-container p {
             font-size: 1.2rem;
-            line-height: 1.6;
+            font-weight: 400;
+            color: #333;
+            line-height: 1.8;
             margin-bottom: 20px;
         }
     </style>
@@ -63,6 +89,7 @@
         </ul>
     </nav>
 
+    <!-- About Content -->
     <div class="about-container">
         <h1>About Me</h1>
         <p>
