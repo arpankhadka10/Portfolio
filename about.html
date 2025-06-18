@@ -26,38 +26,64 @@
 
         /* Navigation */
         nav {
-            position: relative;
-            background-color: black;
-            padding: 20px 50px;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            right: 50px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             z-index: 100;
         }
 
-        nav ul {
-            display: flex;
-            gap: 40px;
-            list-style-type: none;
+        .logo {
+            font-weight: 700;
+            font-size: 2rem;
+            color: white;
         }
 
-        nav ul li a {
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
             color: white;
             text-decoration: none;
             font-size: 1rem;
             font-weight: 600;
-            transition: color 0.3s;
+            position: relative;
         }
 
-        nav ul li a:hover {
-            color: #dcdcdc;
-            text-decoration: underline;
+        .contact-button {
+            background: white;
+            color: black;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: background 0.3s;
+        }
+
+        .contact-button:hover {
+            background: #f0f0f0;
+        }
+
+        body::before {
+            content: "";
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            z-index: -1;
         }
 
         /* About Section */
         .about-container {
             max-width: 800px;
-            margin: 80px auto;
+            margin: 150px auto 80px;
             text-align: center;
             padding: 0 20px;
         }
@@ -81,12 +107,13 @@
 
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contacts.html">Contact</a></li>
-        </ul>
+        <div class="logo">AK</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="contacts.html" class="contact-button">Contact Me</a>
+        </div>
     </nav>
 
     <!-- About Content -->
