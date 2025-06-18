@@ -46,7 +46,7 @@ nav {
 
 .contact-button {
     background: white;
-    color: black;
+    color: black !important; /* Ensures text color stays black */
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 700;
