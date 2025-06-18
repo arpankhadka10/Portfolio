@@ -26,66 +26,93 @@
 
         /* Navigation */
         nav {
-            position: relative;
-            background-color: black;
-            padding: 20px 50px;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            right: 50px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
             align-items: center;
         }
 
-        nav ul {
-            display: flex;
-            gap: 40px;
-            list-style-type: none;
-        }
-
-        nav ul li a {
+        .nav-links a {
             color: white;
             text-decoration: none;
             font-size: 1rem;
             font-weight: 600;
-            transition: color 0.3s;
+            position: relative;
         }
 
-        nav ul li a:hover {
-            color: #dcdcdc;
-            text-decoration: underline;
+        .contact-button {
+            background: white;
+            color: black;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: background 0.3s;
         }
 
-        /* Contact Container */
+        .contact-button:hover {
+            background: #f0f0f0;
+        }
+
+        body::before {
+            content: "";
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            z-index: -1;
+        }
+
+        /* Contact Section */
         .contact-container {
             background-color: white;
-            padding: 40px 30px;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 100%;
+            width: 90%;
             max-width: 600px;
-            margin: 80px auto;
+            margin: 150px auto 80px;
         }
 
         .contact-container h1 {
+            margin-bottom: 20px;
             font-size: 2.5rem;
             font-weight: 700;
-            margin-bottom: 30px;
+            color: black;
         }
 
         .contact-container p {
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin: 15px 0;
+            font-size: 1rem;
+            margin: 12px 0;
+            letter-spacing: 0.03em;
             color: #333;
         }
 
         .contact-container a {
-            color: #0077b5;
+            color: #007bff;
             text-decoration: none;
-            transition: color 0.3s;
+            font-weight: 600;
         }
 
         .contact-container a:hover {
-            color: #004b7c;
             text-decoration: underline;
         }
     </style>
@@ -94,15 +121,16 @@
 
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contacts.html">Contact</a></li>
-        </ul>
+        <div class="logo">AK</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="contacts.html" class="contact-button">Contact Me</a>
+        </div>
     </nav>
 
-    <!-- Contact Section -->
+    <!-- Contact Content -->
     <div class="contact-container">
         <h1>Contact Me</h1>
         <p><strong>Name:</strong> Arpan Khadka</p>
