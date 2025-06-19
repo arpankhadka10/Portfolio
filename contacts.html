@@ -1,143 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - Arpan Khadka</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me - Arpan Khadka</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
 
-    <style>
-        /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Body */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #dcdcdc;
-            color: black;
-            min-height: 100vh;
-        }
+    /* Body */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #dcdcdc;
+      color: black;
+      min-height: 100vh;
+    }
 
-        /* Navigation */
-        nav {
-            position: absolute;
-            top: 30px;
-            left: 50px;
-            right: 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-        }
+    /* Navigation */
+    nav {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      right: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
 
-        .logo {
-            font-weight: 700;
-            font-size: 2rem;
-            color: white;
-        }
+    .logo {
+      font-weight: 700;
+      font-size: 2rem;
+      color: white;
+    }
 
-        .nav-links {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 600;
-            position: relative;
-        }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      position: relative;
+    }
 
-        .contact-button {
-            background: white;
-            color: black;
-            padding: 10px 25px;
-            border-radius: 25px;
-            font-weight: 700;
-            transition: background 0.3s;
-        }
+    .nav-links a:not(.contact-button):hover {
+      text-decoration: underline;
+    }
 
-        .contact-button:hover {
-            background: #f0f0f0;
-        }
+    .contact-button {
+      background: white;
+      color: black !important;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-weight: 700;
+      transition: background 0.3s;
+    }
 
-        body::before {
-            content: "";
-            background: black;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 100px;
-            z-index: -1;
-        }
+    .contact-button:hover {
+      background: #f0f0f0;
+    }
 
-        /* Contact Section */
-        .contact-container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 90%;
-            max-width: 600px;
-            margin: 150px auto 80px;
-        }
+    body::before {
+      content: "";
+      background: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      z-index: -1;
+    }
 
-        .contact-container h1 {
-            margin-bottom: 20px;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: black;
-        }
+    /* Contact Section */
+    .contact-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 600px;
+      margin: 150px auto 80px;
+    }
 
-        .contact-container p {
-            font-size: 1rem;
-            margin: 12px 0;
-            letter-spacing: 0.03em;
-            color: #333;
-        }
+    .contact-container h1 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: black;
+    }
 
-        .contact-container a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: 600;
-        }
+    .contact-container p {
+      font-size: 1rem;
+      margin: 12px 0;
+      letter-spacing: 0.03em;
+      color: #333;
+    }
 
-        .contact-container a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    .contact-container a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">AK</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="project.html">Projects</a>
-            <a href="contacts.html" class="contact-button">Contact Me</a>
-        </div>
-    </nav>
-
-    <!-- Contact Content -->
-    <div class="contact-container">
-        <h1>Contact Me</h1>
-        <p><strong>Name:</strong> Arpan Khadka</p>
-        <p><strong>Email:</strong> <a href="mailto:arpankhadka.ak10@gmail.com">arpankhadka.ak10@gmail.com</a></p>
-        <p><strong>Mobile:</strong> <a href="tel:+9779823683869">9823683869</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arpan-khadka" target="_blank">Arpan Khadka</a></p>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">AK</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Projects</a>
+      <a href="contacts.html" class="contact-button">Contact Me</a>
     </div>
+  </nav>
+
+  <!-- Contact Content -->
+  <div class="contact-container">
+    <h1>Contact Me</h1>
+    <p><strong>Name:</strong> Arpan Khadka</p>
+    <p><strong>Email:</strong> <a href="mailto:arpankhadka.ak10@gmail.com">arpankhadka.ak10@gmail.com</a></p>
+    <p><strong>Mobile:</strong> <a href="tel:+9779823683869">9823683869</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arpan-khadka" target="_blank">Arpan Khadka</a></p>
+  </div>
 
 </body>
 </html>
