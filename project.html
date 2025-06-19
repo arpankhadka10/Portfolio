@@ -16,9 +16,9 @@
     }
 
     body {
-      background-color: rgb(13, 56, 56);
-      color: white;
       font-family: 'Poppins', sans-serif;
+      background-color: #dcdcdc;
+      color: black;
       min-height: 100vh;
     }
 
@@ -73,7 +73,7 @@
 
     body::before {
       content: "";
-      background: rgb(20, 75, 75);
+      background: black;
       position: absolute;
       top: 0;
       left: 0;
@@ -92,15 +92,18 @@
 
     .projects-container h1 {
       font-size: 2.5rem;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      font-weight: 700;
     }
 
     .project-item {
-      background-color: rgb(62, 114, 114);
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      color: black;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: left;
     }
 
     .project-item h2 {
@@ -109,8 +112,13 @@
     }
 
     .project-item p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .button-link {
+      margin-top: 15px;
     }
 
     .button-link button {
@@ -150,17 +158,14 @@
     <div class="project-item">
       <h2>Hostel Management System</h2>
       <p>
-        The Hostel Management System (HMS) is a project that implements fundamental CRUD operations. It allows users to Create, Read, Update, and Delete data stored in a locally-hosted database using PHP and MySQL.
-        The system efficiently manages student data, room assignments, and other hostel-related tasks, showcasing the integration of backend development with a user-friendly interface.
+        The Hostel Management System (HMS) implements core CRUD operations using PHP and MySQL. It efficiently handles student data, room assignments, and administrative tasks through a locally-hosted database and user-friendly interface.
       </p>
     </div>
 
     <div class="project-item">
       <h2>Tic Tac Toe - Game</h2>
       <p>
-        This Tic Tac Toe game is developed using HTML, CSS, and JavaScript, focusing on front-end technologies.
-        It features an interactive user interface where two players can compete.
-        The project demonstrates dynamic DOM manipulation and the use of JavaScript logic to check for winning conditions and handle gameplay.
+        A fun and interactive Tic Tac Toe game made with HTML, CSS, and JavaScript. Two players can play on the same device, and it features real-time feedback with DOM manipulation and win-check logic.
       </p>
       <div class="button-link">
         <button onclick="window.open('https://arpankhadka10.github.io/Game-pj/', '_blank')">PROJECT PAGE</button>
