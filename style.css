@@ -44,6 +44,10 @@ nav {
     position: relative;
 }
 
+.nav-links a:not(.contact-button):hover {
+    text-decoration: underline;
+}
+
 .contact-button {
     background: white;
     color: black !important; /* Ensures text color stays black */
